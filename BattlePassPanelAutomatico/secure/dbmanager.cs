@@ -18,6 +18,7 @@ namespace BattlePassPanelAutomatico.secure
             cmd = new SqlCommand();
             cmd.Connection = cn;
             cmd.CommandType = CommandType.Text;
+            System.Console.WriteLine("Conectado");
         }
         public void GetChars(DataGridView dataGridView2)
         {
@@ -156,6 +157,40 @@ namespace BattlePassPanelAutomatico.secure
             {
                 dataGridView2.Rows[i].Cells["XP_OLD"].Value = dataGridView2.Rows[i].Cells["XP"].Value.ToString() ;
             }
+        }
+        public void Update_Assistance()
+        {
+            string time_hour = DateTime.Now.ToString("HH");
+            string time_minute = DateTime.Now.ToString("mm");
+            string time_second = DateTime.Now.ToString("ss");
+
+            int[] timetoupdate = new int[3] { 0, 0, 0 };
+
+            if (((int.Parse(time_hour) == timetoupdate[0]) &&
+                (int.Parse(time_minute) == timetoupdate[1]) &&
+                (int.Parse(time_second) == timetoupdate[2]))
+                                        ||
+                ((int.Parse(time_hour) == timetoupdate[0]) &&
+                (int.Parse(time_minute) == timetoupdate[1]) &&
+                (int.Parse(time_second) == (timetoupdate[2] + 1))))
+            {
+                try
+                {
+                    cmd.Parameters.Clear();
+                    cmd.CommandText = @"update Account set Assistance = 0";
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    cn.Close();
+                }
+            }            
         }
     }
 }

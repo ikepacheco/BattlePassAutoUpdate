@@ -48,8 +48,10 @@ namespace BattlePassPanelAutomatico
             this.XP_OLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.XP_REST = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TimerBP = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.TimerAssis = new System.Windows.Forms.Timer(this.components);
+            this.label_time = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -192,11 +194,11 @@ namespace BattlePassPanelAutomatico
             this.tabPage1.Text = "Info";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // timer1
+            // TimerBP
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.TimerBP.Enabled = true;
+            this.TimerBP.Interval = 1000;
+            this.TimerBP.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // notifyIcon1
             // 
@@ -206,11 +208,27 @@ namespace BattlePassPanelAutomatico
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
+            // TimerAssis
+            // 
+            this.TimerAssis.Enabled = true;
+            this.TimerAssis.Interval = 1000;
+            this.TimerAssis.Tick += new System.EventHandler(this.TimerAssis_Tick);
+            // 
+            // label_time
+            // 
+            this.label_time.AutoSize = true;
+            this.label_time.Location = new System.Drawing.Point(565, 4);
+            this.label_time.Name = "label_time";
+            this.label_time.Size = new System.Drawing.Size(35, 13);
+            this.label_time.TabIndex = 1;
+            this.label_time.Text = "label1";
+            // 
             // Content
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 376);
+            this.Controls.Add(this.label_time);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -225,6 +243,7 @@ namespace BattlePassPanelAutomatico
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -235,7 +254,7 @@ namespace BattlePassPanelAutomatico
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer TimerBP;
         private System.Windows.Forms.DataGridViewTextBoxColumn AID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UGradeID;
@@ -249,6 +268,8 @@ namespace BattlePassPanelAutomatico
         private System.Windows.Forms.DataGridViewTextBoxColumn XP_OLD;
         private System.Windows.Forms.DataGridViewTextBoxColumn XP_REST;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Timer TimerAssis;
+        private System.Windows.Forms.Label label_time;
     }
 }
 

@@ -15,6 +15,7 @@ namespace BattlePassPanelAutomatico
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label_time.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
             cf.GetChars(dataGridView2);
             cf.GetAccs(dataGridView1);
             cf.GetXP_OLD(dataGridView2);
@@ -54,6 +55,12 @@ namespace BattlePassPanelAutomatico
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
+        }
+
+        private void TimerAssis_Tick(object sender, EventArgs e)
+        {
+            cf.Update_Assistance();
+            label_time.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
         }
     }
 }
