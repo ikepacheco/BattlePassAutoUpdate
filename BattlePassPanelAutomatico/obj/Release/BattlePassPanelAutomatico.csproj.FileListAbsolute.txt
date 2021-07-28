@@ -1,0 +1,10 @@
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\bin\Release\BattlePassPanelAutomatico.exe.config
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\bin\Release\BattlePassPanelAutomatico.exe
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\bin\Release\BattlePassPanelAutomatico.pdb
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.Properties.Resources.resources
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.csproj.GenerateResource.cache
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.csproj.CoreCompileInputs.cache
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.exe
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.pdb
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.csproj.AssemblyReference.cache
+D:\Disco D\Jason\Lenguajes\C# CLASES\Proyectos\BattlePassPanelAutomatico\BattlePassPanelAutomatico\obj\Release\BattlePassPanelAutomatico.Content.resources
